@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductsModule } from './products/products.module';
 import { HomeComponent } from './shared/home.component';
 import { ContactComponent } from './shared/contact.component';
 import { AdminComponent } from './shared/admin.component';
@@ -23,7 +22,6 @@ import { MaterialModule } from './material.module';
     MaterialModule,
     FormsModule,
     HttpClientModule,
-    ProductsModule,
     HomeComponent,
     ContactComponent,
     AdminComponent,
