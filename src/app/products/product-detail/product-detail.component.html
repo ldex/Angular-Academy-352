@@ -5,9 +5,7 @@
     <p>Price: {{product.price | currency:'USD':'symbol-narrow':'.2'}}</p>
     <p>
         Edit price:
-        <input type="number"
-            [(ngModel)]="product.price"
-            [disabled]="product.fixedPrice">
+        <input type="number" [(ngModel)]="product.price" [disabled]="product.fixedPrice">
     </p>
     <p>Fixed price? {{product.fixedPrice}}</p>
     <p>Discontinued?
@@ -15,4 +13,9 @@
     </p>
     <p>Modified date:
         {{product.modifiedDate | date}}</p>
+    <p>
+        <button mat-fab color="primary" (click)="delete()">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </p>
 </div>
