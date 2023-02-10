@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { delay, Observable, tap } from 'rxjs';
 import { Product } from '../models/product.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProductService {
 
   private baseUrl = 'https://storerestservice.azurewebsites.net/api/products/';

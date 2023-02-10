@@ -7,6 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsModule } from './products/products.module';
+import { HomeComponent } from './shared/home.component';
+import { ContactComponent } from './shared/contact.component';
+import { AdminComponent } from './shared/admin.component';
+import { ErrorComponent } from './shared/error.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +20,15 @@ import { ProductsModule } from './products/products.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
+    MaterialModule,
     FormsModule,
     HttpClientModule,
-    ProductsModule
+    ProductsModule,
+    HomeComponent,
+    ContactComponent,
+    AdminComponent,
+    ErrorComponent,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
